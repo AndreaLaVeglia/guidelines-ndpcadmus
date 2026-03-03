@@ -1,5 +1,7 @@
 # Guida pratica all'utilizzo di Cadmus
 
+>a cura di Andrea La Veglia (per chiarimenti: [alaveglia@unisa.it](mailto:alaveglia@unisa.it))
+
 INDICE
 - [1.1 Aggiunta di item](#11-aggiunta-di-item)
 - [1.2 Aggiunta di part](#12-aggiunta-di-part)
@@ -19,9 +21,12 @@ Il primo passaggio per il catalogatore è dunque la creazione di un nuovo _item_
 ### Metadati identificativi (identity)
 
 Per la creazione di un nuovo _item_ bisogna inserire i seguenti metadati obbligatori che costituiscono l'etichetta (_**label**_) dell'_item_: 
-- `title` 
+- `title` = indica il titolo rappresentativo dell'item. A seconda del tipo di item si seguiranno queste convenzioni stabilite
+  - d
 - `description` 
 - `facet`provvede ad indicare la tipologia di item, specificando dunque se si tratti di manoscritti, disegni o stampe, oppure di un item iconografico o di una persona.
+
+
 
 ### Flags
 
@@ -30,200 +35,200 @@ I flags sono le "bandierine" che segnalano lo stato editoriale della catalogazio
 > NB Dal momento della creazione dell'item bibliologico fino al suo completamento, per segnalare agli altri contributori che è ancora in lavorazione, bisogna selezionare lo stato di `draft`. 
 Dopo il completamento della scheda si potrà selezionare `complete` e togliere la spunta a `draft`.
 
-## 2. Aggiunta delle parts
+## 2. Aggiunta delle _parts_
 
+Dopo aver creato la "scatola" che indica la 
 Si riportano di seguito gli schemi di catalogazione da seguire per:
 - [manoscritti](#manuscript), 
+- [frammenti](#fragment)
+- [edizioni di testi a stampa (edizione "ideale")](#print-edition)
+- [esemplare di testo a stampa](#print-instance)
+- [progetto disegni](#drawings-project)
+- [disegno](#drawing-item)
+- [iconografia](#iconography)
+- [persona](#person)
 
 ### **manuscript**
 
   - _identity_
     - [metadata](#23--metadata)
-    - [shelfmarks]()
-    - [links]()
-    - [categories]() text categories are a cross-reference taxonomy used to define the text type (e.g. comment) from the philological point of view
+    - [shelfmarks](#shelfmarks)
+    - [links](#links)
+    - [categories](#categories)  
   - _history_
-    - [chronotopes]()
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`ms` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` (history) 🚩
+    - [chronotopes](#chronotopes)
+    - [historical events](#historical-events)
+    - [note](#note)
   - _material_
-    - [bindings](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-bindings.md) (COD)
-    - [sheet labels](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-sheet-labels.md) (COD)
-    - [material description](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-material-dsc.md) (COD)
-    - [watermarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md) (COD)
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [bindings](#bindings)
+    - [sheet labels](#sheet-labels)
+    - [material description](#material-description) 
+    - [watermarks](#watermarks)
+    - [preservation states](#preservation-states)
   - _content_
-    - [contents](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-contents.md) (COD)
-    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md) (COD)
-    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD) 🔗 `iconography`, `person`
-    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO) 🔗 `iconography`
-    - [hands](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-hands.md) (COD) 🔗 `person`
-    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD) 🔗 `person`
-    - [notable word forms](https://github.com/vedph/cadmus-ndp/blob/master/docs/notable-word-forms.md) (NDP)
+    - [contents](#contents)
+    - [layouts](#layouts)
+    - [decorations](#decorations)
+    - [iconography instructions](#iconography-instructions) 
+    - [hands](#hands)
+    - [edits](#edits)
+    - [notable word forms](#notable-word-forms) 
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
+    - [note](#note)
   - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md) (mostly used for Zotero bibliography)
+    - [references](#references) (mostly used for Zotero bibliography)
 
 ### **fragment**
 
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) 🔗 `manuscript` (+group)
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`txt` 🚩
+    - [metadata](#metadata)
+    - [shelfmarks](#shelfmarks)
+    - [links](#links)
+    - [categories](#categories)  
   - _history_
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md)
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`fr` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` (history)
+    - [chronotopes](#chronotopes)
+    - [historical events](#historical-events)
+    - [note](#note)
   - _material_
-    - [support](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-support-part.md) (FRA)
-    - [rulings](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-rulings-part.md) (FRA)
-    - [labels](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-quire-labels-part.md):`sig` (FRA) 🚩
-    - [labels](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-quire-labels-part.md) (FRA)
-    - [decorated counts](https://github.com/vedph/cadmus-general/blob/master/docs/decorated-counts.md):`fr` 🚩
-    - [measurements](https://github.com/vedph/cadmus-general/blob/master/docs/physical-measurements.md):`fr` 🚩
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [support](#support)
+    - [rulings](#rulings)
+    - [labels](#labels)
+    - [decorated counts](#decorated-counts)
+    - [measurements](#measurements)
+    - [preservation states](#preservation-states)
   - _content_
-    - [contents](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-contents.md) (COD)
-    - [layout](https://github.com/vedph/cadmus-ndp-frac#codfrlayoutpart) (FRA)
-    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD) 🔗 `iconography`, `person`
-    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO) 🔗 `iconography`
-    - [hands](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-hands.md) (COD) 🔗 `person`
-    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD) 🔗 `person`
-    - [notable word forms](https://github.com/vedph/cadmus-ndp/blob/master/docs/notable-word-forms.md) (NDP)
+    - [contents](#contents)
+    - [layout](#layout)
+    - [decorations](#decorations)
+    - [iconography instructions](#iconography-instructions)
+    - [hands](#hands)
+    - [edits](#edits)
+    - [notable word forms](#notable-word-forms)
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
-  - references
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [note](#note)
+  - _references_
+    - [references](#references)
 
 ### **print edition**
 
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) (this can include also authors and editors) 🔗 `person`
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`txt` 🚩
+    - [metadata](#metadata)
+    - [links](#links)
+    - [categories](#categories)  
   - _history_
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`prn` 🚩 (print date/place)
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`pub` 🚩 (publication date/place)
+    - [chronotopes](#chronotopes)
   - _content_
-    - [fonts](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/print-fonts-part.md) (BOK)
-    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md) (COD)
-    - [watermarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md) (COD)
-    - [figurative plan](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/figurative-plan-part.md) (BOK) 🔗 `person`
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`inc` 🚩 (incipit)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`col` 🚩 (colophon)
+    - [fonts](#fonts)
+    - [layouts](#layouts)
+    - [watermarks](#watermarks)
+    - [figurative plan](#figurative-plan)
+    - [note](#note)
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
+    - [note](#note)
   - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [references](#references)
 
 ### **print instance**
 
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) 🔗 `print edition` (+group)
-    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md)
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`txt` 🚩
+    - [metadata](#metadata)
+    - [links](#links)
+    - [shelfmarks](#shelfmarks)
+    - [categories](#categories)  
   - _history_
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`pri` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 (history)
+    - [historical events](#historical-events)
+    - [note](#note)
   - _material_
-    - [bindings](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-bindings.md) (COD)
-    - [sheet labels](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-sheet-labels.md) (COD)
-    - [measurements](https://github.com/vedph/cadmus-general/blob/master/docs/physical-measurements.md):`pri`
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [bindings](#bindings)
+    - [sheet labels](#sheet-labels)
+    - [measurements](#measurements)
+    - [preservation states](#preservation-states)
   - _content_
-    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md) (COD)
-    - [figurative plan implementation](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/figurative-plan-impl-part.md) (BOK) 🔗 `iconography`
-    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD) 🔗 `iconography`, `person`
-    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD)
-    - [notable word forms](https://github.com/vedph/cadmus-ndp/blob/master/docs/notable-word-forms.md) (NDP)
+    - [layouts](#layouts)
+    - [figurative plan implementation](#figurative-plan-implementation)
+    - [decorations](#decorations)
+    - [edits](#edits)
+    - [notable word forms](#notable-word-forms)
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
+    - [note](#note)
   - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [references](#references)
 
 ### **drawings project**
 
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) (also for authors) 🔗 `person`
-    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD)
+    - [metadata](#metadata)
+    - [links](#links)
+    - [shelfmarks](#shelfmarks)
   - _history_
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md)
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`drp` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 (history)
+    - [chronotopes](#chronotopes)
+    - [historical events](#historical-events)
+    - [note](#note)
   - _material_
-    - [bindings](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-bindings.md):`drp` 🚩 (COD)
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
-    - [decorated counts](https://github.com/vedph/cadmus-general/blob/master/docs/decorated-counts.md):`drp` 🚩
+    - [bindings](#bindings)
+    - [preservation states](#preservation-states)
+    - [decorated counts](#decorated-counts)
   - _content_
-    - [comment](https://github.com/vedph/cadmus-general/blob/master/docs/comment.md)
+    - [comment](#comment)
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
+    - [note](#note)
   - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [references](#references)
 
 ### **drawing item**
 
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) (also for authors) 🔗 `drawings project` (+group) 🔗 `person`
-    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD)
+    - [metadata](#metadata)
+    - [links](#links)
+    - [shelfmarks](#shelfmarks)
   - _history_
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md)
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`dri` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 (history)
+    - [chronotopes](#chronotopes)
+    - [historical events](#historical-events)
+    - [note](#note)
   - _material_
-    - [drawing tech](https://github.com/vedph/cadmus-ndp-drawings?tab=readme-ov-file#drawingtechpart) (DRW)
-    - [watermarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md) (COD)
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [drawing tech](#drawing-tech)
+    - [watermarks](#watermarks)
+    - [preservation states](#preservation-states)
   - _content_
-    - [flags](https://github.com/vedph/cadmus-general/blob/master/docs/flags.md):`dri` 🚩
-    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD)
-    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO) 🔗 `iconography`
+    - [flags](#flags)
+    - [edits](#edits)
+    - [iconography instructions](#iconography-instructions)
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
+    - [note](#note)
   - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [references](#references)
 
 ### **iconography**
 
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
+    - [metadata](#metadata)
   - _relations_
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) 🔗 `iconography`
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`ict` 🚩 (iconographic topics = IDP categorie)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`isd` 🚩 (subject details = IDP rapporti con la tradizione dantesca)
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`ics` 🚩 (iconographic subjects = IDP soggetti)
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`ctx` 🚩 (luoghi danteschi)
+    - [links](#links)
+    - [categories](#categories)
+    - [note](#note)
   - _content_
-    - [flags](https://github.com/vedph/cadmus-general/blob/master/docs/flags.md):`ico` 🚩 (storie seconde, altro)
-    - [comment](https://github.com/vedph/cadmus-general/blob/master/docs/comment.md) (description, including keywords)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`ptx` (paratext)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`exe` (exegesis)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`ift` 🚩 (figurative theme = IDP rapporti extradanteschi)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`msc` 🚩 (miscellaneous = IDP note)
+    - [flags](#flags)
+    - [comment](#comment)
+    - [note](#note)
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
+    - [note](#note)
   - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [references](#references)
 
 ### **person**
-  - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [names](https://github.com/vedph/cadmus-general/blob/master/docs/names.md)
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`bio` 🚩 (person categories, like poet, cardinal, jurist, miniaturist, etc.)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md)
-  - _history_
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`bio` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 (history)
-  - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
-  - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
 
+  - _identity_
+    - [metadata](#metadata)
+    - [names](#names)
+    - [categories](#categories)
+    - [links](#links)
+  - _history_
+    - [historical events](#historical-events)
+    - [note](#note)
+  - _editorial_
+    - [note](#note)
+  - _references_
+    - [references](#references)
 
 
 ## 2.2 Come si aggiunge una _part_
@@ -236,11 +241,25 @@ Si veda di seguito lo screenshot di esempio per l'aggiunta di una parte.
 
 
 
-## 2.3  `metadata`
 
-La prima part da aggiungere è `metadata` per attribuire all'_item_ un EID (ID human friedly) e le informazioni sui catalogatori
-
-### EID 
+## 2.3 Guida all'utilizzo delle part
+Di seguito si riportano in ordine alfabetico le parts di CADMUS NDP (che sono richiamate nelle singole sezioni dedicate ad ogni items)
+### bindings
+### categories
+text categories are a cross-reference taxonomy used to define the text type (e.g. comment) from the philological point of view
+### chronotopes
+### contents
+### decorations
+### edits
+### hands
+### historical events
+### iconography instructions
+### layouts
+### links
+### material description
+### metadata
+Questa part è utile per per attribuire all'_item_ un EID (ID human friedly) e le informazioni sui catalogatori
+#### EID 
 
  L'EID è strutturato convenzionalmente secondo le seguenti parti:
 
@@ -255,16 +274,20 @@ Quindi nel caso del manoscritto mediceo l'EID risulta: `ms_fi-bml-86`
 
 >NB tutte le lettere sono minuscole
 
-### Indicazioni sull'autorialità della scheda
+#### Autorialità della scheda
+#### `author` 
+indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia fatto un lavoro di catalogazione  "di prima mano"
+#### `revisor` 
+indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia fatto un lavoro di catalogazione  "di seconda mano"
 
-- `author` indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia fatto un lavoro di catalogazione  "di prima mano"
-- `revisor` indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia fatto un lavoro di catalogazione  "di seconda mano"
-- `IDP author` indica l'autore della scheda in IDP (In IDP è visualizzato in fondo alla scheda, alla voce **Autore/i della scheda (sezione IDP)** [corrisponde a `IDP_autoriIDP`])
-- `IDP revisor` indica il revisore della scheda in IDP (In IDP è visualizzato in fondo alla scheda, alla voce **Revisore/i della scheda (sezione IDP)** [corrisponde a `IDP_revisoriIDP`])
-- `MOL author` indica l'autore della scheda in MOL (In IDP è visualizzato in fondo alla scheda, alla voce **Autore/i della scheda (sezione MOL)** [corrisponde a `IDP_autoriMOL`])
-- `MOL revisor` indica il revisore della scheda in MOL (In IDP è visualizzato in fondo alla scheda, alla voce **Revisore/i della scheda (sezione MOL)** [corrisponde a `IDP_revisoriMOL`])  
+### notable word forms
+### note
+### preservation states
+### references
+### sheet labels
+### watermarks
 
-[torna all'indice](#linee-guida-per-il-trasferimento-di-schede-da-idp-a-cadmus)
+
 
 
 

@@ -28,6 +28,16 @@ Per la creazione di un nuovo _item_ bisogna inserire i seguenti metadati obbliga
 - `description` che consiste nella descrizione sommaria del manoscritto. Qui si deve inserire la **descrizione sintetica** della scheda IDP (`IDP_unita/descrizionesintetica`). sarebbe il primo blocco di testo che viene visualizzato .
 - `facet`provvede ad indicare la tipologia di item. Nel caso del'aggiunta di un manoscritto il valore è chiaramente `manuscript`.
 
+### Autorialità della scheda IDP/MOL
+
+Se si sta importando una scheda da IDP, il catalogatore si qualifica come [revisore](./tutorialForCadmus.md/#revisor): 
+
+- `IDP author` indica l'autore della scheda in IDP (In IDP è visualizzato in fondo alla scheda, alla voce **Autore/i della scheda (sezione IDP)** [corrisponde a `IDP_autoriIDP`])
+- `IDP revisor` indica il revisore della scheda in IDP (In IDP è visualizzato in fondo alla scheda, alla voce **Revisore/i della scheda (sezione IDP)** [corrisponde a `IDP_revisoriIDP`])
+- `MOL author` indica l'autore della scheda in MOL (In IDP è visualizzato in fondo alla scheda, alla voce **Autore/i della scheda (sezione MOL)** [corrisponde a `IDP_autoriMOL`])
+- `MOL revisor` indica il revisore della scheda in MOL (In IDP è visualizzato in fondo alla scheda, alla voce **Revisore/i della scheda (sezione MOL)** [corrisponde a `IDP_revisoriMOL`])  
+
+
 ### Flags
 
 I flags sono le "bandierine" che segnalano lo stato editoriale della catalogazione dell'oggetto di riferimento (ms, frg, ...) in Cadmus.
@@ -37,6 +47,7 @@ Dopo il completamento della scheda si potrà selezionare `complete` e togliere l
 
 
 [torna all'indice](#linee-guida-per-il-trasferimento-di-schede-da-idp-a-cadmus)
+
 
 ## 1.2 Aggiunta di _part_ per le singole analisi
 
