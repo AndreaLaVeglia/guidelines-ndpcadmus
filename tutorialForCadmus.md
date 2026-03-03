@@ -3,8 +3,8 @@
 >a cura di Andrea La Veglia (per chiarimenti: [alaveglia@unisa.it](mailto:alaveglia@unisa.it))
 
 INDICE
-- [1.1 Aggiunta di item](#11-aggiunta-di-item)
-- [1.2 Aggiunta di part](#12-aggiunta-di-part)
+- [1 Aggiunta di item](#1-aggiunta-di-un-item)
+- [2 Aggiunta di part](#2-aggiunta-delle-parts)
 
 Cadmus è un framework di descrizione modulare, nel senso che offre la possibilità di strutturare le informazioni in moduli componibili. In particolare l'architettura di Cadmus è costituita da **_items_** e da **_parts_**.  
 
@@ -22,7 +22,7 @@ Il primo passaggio per il catalogatore è dunque la creazione di un nuovo _item_
 
 Per la creazione di un nuovo _item_ bisogna inserire i seguenti metadati obbligatori che costituiscono l'etichetta (_**label**_) dell'_item_: 
 - `title` = indica il titolo rappresentativo dell'item. A seconda del tipo di item si seguiranno queste convenzioni stabilite
-  - d
+  - **manoscritto**: 
 - `description` 
 - `facet`provvede ad indicare la tipologia di item, specificando dunque se si tratti di manoscritti, disegni o stampe, oppure di un item iconografico o di una persona.
 
