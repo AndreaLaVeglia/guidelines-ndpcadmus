@@ -22,7 +22,7 @@ Il primo passaggio per il catalogatore è dunque la creazione di un nuovo _item_
 
 Per la creazione di un nuovo _item_ bisogna inserire i seguenti metadati obbligatori che costituiscono l'etichetta (_**label**_) dell'_item_: 
 - `title` = indica il titolo rappresentativo dell'item. A seconda del tipo di item si seguiranno queste convenzioni stabilite
-  - **manoscritto**: 
+  - **manoscritto**: Città secondo la lingua del catalogo, abbreviazione della biblioteca, secondo le [abbreviazioni di cui alla tabella in appendice](#abbreviazioni-biblioteche), segnatura.
 - `description` 
 - `facet`provvede ad indicare la tipologia di item, specificando dunque se si tratti di manoscritti, disegni o stampe, oppure di un item iconografico o di una persona.
 
@@ -37,13 +37,21 @@ Dopo il completamento della scheda si potrà selezionare `complete` e togliere l
 
 ## 2. Aggiunta delle _parts_
 
-Dopo aver creato la "scatola" che indica la 
+Dopo aver creato l'_item_, ossia la "scatola" che rappresenta l'oggetto che si sta catalogando, si può procedere all'aggiunta delle parti di Cadmus utili a descrivere l'oggetto in questione.  
+
+L' elemento _part_ è un **set di dati** coerente che si riferisce all'item al quale viene correlato (Cf. [Documentazione di Cadmus](https://cadmus.fusi-soft.com/docs/data-architecture)).  
+Si veda di seguito lo screenshot di esempio per l'aggiunta di una parte. 
+
+![Aggiunta di Part](addpart.png)<figcaption>Aggiunta di una part in Cadmus.</figcaption>
+
+In Cadmus per ogni tipologia di oggetto è stato predisposto un modello descrittivo/interpretativo che suggerisce l'utilizzo di specifiche parts.
+
 Si riportano di seguito gli schemi di catalogazione da seguire per:
 - [manoscritti](#manuscript), 
 - [frammenti](#fragment)
 - [edizioni di testi a stampa (edizione "ideale")](#print-edition)
 - [esemplare di testo a stampa](#print-instance)
-- [progetto disegni](#drawings-project)
+- [progetto dei disegni](#drawings-project)
 - [disegno](#drawing-item)
 - [iconografia](#iconography)
 - [persona](#person)
@@ -51,7 +59,7 @@ Si riportano di seguito gli schemi di catalogazione da seguire per:
 ### **manuscript**
 
   - _identity_
-    - [metadata](#23--metadata)
+    - [metadata](#metadata)
     - [shelfmarks](#shelfmarks)
     - [links](#links)
     - [categories](#categories)  
@@ -231,19 +239,12 @@ Si riportano di seguito gli schemi di catalogazione da seguire per:
     - [references](#references)
 
 
-## 2.2 Come si aggiunge una _part_
-
-Un elemento _part_ è un **set di dati** coerente che si riferisce all'item al quale viene correlato (Cf. [Documentazione di Cadmus](https://cadmus.fusi-soft.com/docs/data-architecture)).  
-DUnque, dopo aver creato un _item_ si può procedere alla parte fondamentale del lavoro, ossia l'aggiunta delle parti di Cadmus utili a descrivere l'item bibliologico in questione.  
-Si veda di seguito lo screenshot di esempio per l'aggiunta di una parte. 
-
-![Aggiunta di Part](addpart.png)<figcaption>Aggiunta di un item in Cadmus.</figcaption>
 
 
 
+## 3 Elenco analitico (in ordine alfabetico) delle part
+Di seguito si riportano in ordine alfabetico le parts di CADMUS NDP (che sono richiamate nelle singole sezioni dedicate ad ogni items). All'intero di ogni part si ritrovano dei _bricks_ che servono ad inserire una tipologia ancora più specifica di dato. Per l'elenco analitico dei bricks, si rimanda alla sezione successiva, ma ogni brick è richiamato all'interno delle parts in cui è implementato.
 
-## 2.3 Guida all'utilizzo delle part
-Di seguito si riportano in ordine alfabetico le parts di CADMUS NDP (che sono richiamate nelle singole sezioni dedicate ad ogni items)
 ### bindings
 ### categories
 text categories are a cross-reference taxonomy used to define the text type (e.g. comment) from the philological point of view
@@ -255,17 +256,48 @@ text categories are a cross-reference taxonomy used to define the text type (e.g
 ### historical events
 ### iconography instructions
 ### layouts
+Questa part dàinformazioni sulle dimensioni fisiche della pagina le misure dello specchio di scrittura.   
+
+Di seguito le informazioni utili per compilare i campi di questa part.
+
+| campo | descrizione|
+|---|---|
+| `sample` | carta di esempio
+| `range` | range di carte a cui si applica il layout
+| `rulings` | Tecnica di rigatura
+| `derolez` | numero nella classificazione di Derolez
+
+#### Formula
+Un po' più di attenzione merita il campo `formula`.
+In questo campo vanno inseriti:
+- il valore numerico delle dimensioni (nel formato altezza x larghezza [HxW]) 
+- La formula dello **Specchio rigato**.  
+I due valori sono separati dal segno = e ne risulta la formula così composta:  
+
+Una volta inserita la formula, è possibile generare lo schema del layout ed estrarre le singole dimensioni andando a cliccare sulla freccia verso il basso a destra di `formula` e poi andando in `dimensioni` si possono importare i singoli valori numerici.
+
+#### Note
+
+Le informazioni aggiuntive contenute in **Disposizione del testo** vanno aggiunte come nota.
 ### links
 ### material description
 ### metadata
-Questa part è utile per per attribuire all'_item_ un EID (ID human friedly) e le informazioni sui catalogatori
-#### EID 
+Con questa parte si attribuiscono all'item dei metadati generici.  
+Convenzionalmente qui si deve inserire un EID e le informazioni e le informazioni sull'autorialità della scheda
+#### type=EID 
 
- L'EID è strutturato convenzionalmente secondo le seguenti parti:
+ L'EID è un ID user-friendly è strutturato convenzionalmente secondo le seguenti parti:
 
-1. indica il *facet* 
+1. indica il *facet*, ossia la tipologia di item secondo la seguente tabella
+| facet | abbreviazione per EID |
+|---|---|
+| manoscritto | ms |
+| testo a stampa | inc/stamp |
+| edizione | ed |
+| frammento ! fr |
+| iconografia | ... |
 2. sigla standard della città di provenienza o di edizione;
-3. sigla della biblioteca o archivio in cui è contenuto il manufatto da descrivere; 
+3. sigla della biblioteca o archivio in cui è contenuto il manufatto da descrivere, utilizzando le [abbreviazioni](#abbreviazioni-biblioteche) stabilite convenzionalmente; 
 4. parte numerica della segnatura del manoscritto o dell'incunabolo 
 
 **1** e **2** sono separate da un underscore ( **_** ), le altre parti da un trattino intermedio ( **-** )
@@ -273,13 +305,11 @@ Questa part è utile per per attribuire all'_item_ un EID (ID human friedly) e l
 Quindi nel caso del manoscritto mediceo l'EID risulta: `ms_fi-bml-86`
 
 >NB tutte le lettere sono minuscole
-
 #### Autorialità della scheda
 #### `author` 
 indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia fatto un lavoro di catalogazione  "di prima mano"
 #### `revisor` 
 indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia fatto un lavoro di catalogazione  "di seconda mano"
-
 ### notable word forms
 ### note
 ### preservation states
@@ -291,14 +321,69 @@ indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia f
 
 
 
+## 4. Elenco analitico (in ordine alfabetico) dei bricks
 
-
-
-
-## 4. Aggiunta della bibliografia (references)
-
-
-[torna all'indice](#linee-guida-per-il-trasferimento-di-schede-da-idp-a-cadmus)
-
-
-
+## APPENDICI
+### abbreviazioni biblioteche
+Se una biblioteca non è presente si prega di segnalarlo via email in modo che si possa poi stabilire una sigla convenzionale e univoca all'interno del progetto.
+| Città                        | Biblioteca                                                                 | Sigla  |
+|-------------------------------|---------------------------------------------------------------------------|--------|
+| Ascoli Piceno                 | Biblioteca comunale                                                        | BCom   |
+| Belluno                       | Biblioteca capitolare Lolliniana                                           | BL     |
+| Bergamo                       | Biblioteca civica Angelo Mai                                               | BCiv   |
+| Berlin                        | Staatlichen Museen, Kupferstichkabinett u. Sammlung der Zeichnungen       | StMu   |
+| Berlin                        | Staatsbibliothek Preussischer Kulturbesitz                                 | SB     |
+| Bologna                       | Biblioteca comunale dell'Archiginnasio                                     | BCom   |
+| Bologna                       | Biblioteca universitaria                                                   | BU     |
+| Boston                        | Isabella Stewart Gardner Museum                                            | ISGM   |
+| Brescia                       | Biblioteca civica Queriniana                                               | BCiv   |
+| Budapest                      | Eötvös Loránd Tudomány Egyetem Könyvtára                                   | ELTEK  |
+| Cagliari                      | Biblioteca universitaria                                                   | BU     |
+| Cambridge                     | University Library                                                         | UB     |
+| Cambridge (Mass., USA)        | Harvard College Libraries, Houghton Library                                | HL     |
+| Capetown                      | National Library of South Africa                                           | NLSA   |
+| Chantilly                     | Bibliothèque du château                                                    | BdC    |
+| Chiavari                      | Archivio Notarile                                                         | AN     |
+| Città del Vaticano            | Biblioteca Apostolica Vaticana                                             | BAV    |
+| Cologny                       | Fondation Martin Bodmer                                                   | FMB    |
+| Cortona                       | Biblioteca Comunale e dell'Accademia Etrusca                               | BCom   |
+| Crema                         | Biblioteca Comunale                                                        | BCom   |
+| Eton                          | College Library                                                           | CL     |
+| Firenze                       | Biblioteca Medicea Laurenziana                                             | BML    |
+| Firenze                       | Biblioteca Nazionale Centrale                                              | BNCF   |
+| Firenze                       | Biblioteca Riccardiana                                                    | BR     |
+| Frankfurt am Main             | Stadt und Universaitäts-Bibliothek                                        | SUB    |
+| Genova                        | Biblioteca Durazzo                                                        | BDur   |
+| Hamburg (Altona)              | Schulbibliothek des Christianeum                                           | BC     |
+| Imola                         | Biblioteca Comunale                                                        | BCom   |
+| København                     | Kongelige Bibliotek                                                       | KB     |
+| London                        | British Library                                                           | BL     |
+| Madrid                        | Biblioteca Nacional de España                                             | BN     |
+| Manchester                    | John Rylands University Library                                           | UB     |
+| Milano                        | Veneranda Biblioteca Ambrosiana                                            | VBA    |
+| Milano                        | Biblioteca Nazionale Braidense                                             | BNB    |
+| Milano                        | Biblioteca dell'Archivio Storico e Trivulziana                             | BT     |
+| Modena                        | Biblioteca Estense Universitaria                                           | BU     |
+| Mumbai                        | The Asiatic Society of Mumbai                                             | ASM    |
+| Napoli                        | Biblioteca Nazionale                                                       | BN     |
+| Napoli                        | Biblioteca Oratoriana del Monumento Nazionale dei Girolamini di Napoli     | BOG    |
+| New Haven                     | Beinecke Library (Yale University)                                        | BL     |
+| New York                      | H.P. Kraus                                                                | Kraus  |
+| New York                      | Morgan Library & Museum                                                   | ML     |
+| Novara                        | Biblioteca Comunale                                                        | BCom   |
+| Oxford                        | Bodleian Library                                                          | BL     |
+| Padova                        | Biblioteca Civica                                                         | BCiv   |
+| Padova                        | Biblioteca del Seminario Vescovile                                        | BSem   |
+| Paris                         | Bibliothèque nationale de France (Arsenal)                                 | BnFArs |
+| Paris                         | Bibliothèque nationale de France (Richelieu)                               | BnF    |
+| Parma                         | Biblioteca Palatina                                                       | BPal   |
+| Perugia                       | Biblioteca Comunale Augusta                                               | BCom   |
+| Piacenza                      | Biblioteca Comunale Passerini Landi                                        | BCom   |
+| Ravenna                       | Biblioteca Comunale Classense                                             | BCom   |
+| Reggio Emilia                  | Archivio di Stato                                                         | AS     |
+| Rimini                        | Biblioteca Civica Gambalunga                                              | BCiv   |
+| Roma                          | Biblioteca Angelica                                                       | BA     |
+| Roma                          | Biblioteca Casanatense                                                    | Bcas   |
+| Roma                          | Biblioteca dell'Accademia Nazionale dei Lincei e Corsiniana               | BANLC  |
+| Roma                          | Biblioteca Nazionale Centrale                                             | BNC    |
+| San Daniele del Friuli         | ...                                                                       | ...    |

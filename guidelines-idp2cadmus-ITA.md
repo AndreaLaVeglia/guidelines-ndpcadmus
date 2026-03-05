@@ -2,7 +2,7 @@
 
 >a cura di Andrea La Veglia (per chiarimenti: [alaveglia@unisa.it](mailto:alaveglia@unisa.it))
 
-In queste linee guida saranno illustrati i passaggi per il trasferimento di una scheda di catalogo dal database di IDP all'ambiente di Cadmus.
+In queste linee guida saranno illustrati i passaggi per il trasferimento di una scheda di catalogo dal database di IDP all'ambiente di Cadmus, con le indicazioni della [mappatura](https://en.wikipedia.org/wiki/Data_mapping) tra i due sistemi.
 
 Si utilizzerà come esempio la scheda IDP del ms. **Firenze, BML, Acquisti e doni 86** corrispondente alla scheda IDP: [ms/250000
 ](https://www.dante.unina.it/ms/250000).
@@ -19,7 +19,7 @@ Passaggi da seguire:
 
 ## 1.1 Aggiunta di _item_ per il ms
 
-Per l'aggiunta di un _item_ cf. [TutorialForCadmus/Aggiunta di item](./tutorialForCadmus.md/#11-aggiunta-di-item)
+Per l'aggiunta di un _item_ cf. [TutorialForCadmus/1. Aggiunta di item](./tutorialForCadmus.md/#1-aggiunta-di-un-item)
 
 ### Metadati identificativi da IDP>Cadmus (identity)
 
@@ -51,7 +51,7 @@ Dopo il completamento della scheda si potrà selezionare `complete` e togliere l
 
 ## 1.2 Aggiunta di _part_ per le singole analisi
 
-Per l'aggiunta di _part_ cf. [TutorialForCadmus/Aggiunta di part](./tutorialForCadmus.md/#12-aggiunta-di-part)
+Per l'aggiunta di _part_ cf. [TutorialForCadmus/Aggiunta di part](./tutorialForCadmus.md/#2-aggiunta-delle-parts)
 
 ### 1.2.1 Aggiunta della part `metadata`con EID e autore
 
@@ -226,7 +226,8 @@ restauro = restore
 [torna all'indice](#linee-guida-per-il-trasferimento-di-schede-da-idp-a-cadmus)
 
 
-## 4. Aggiunta della bibliografia (references)
+## 4. Aggiunta della bibliografia
+Aggiungere la part [references](./tutorialForCadmus.md/#references)
 
 
 [torna all'indice](#linee-guida-per-il-trasferimento-di-schede-da-idp-a-cadmus)
