@@ -324,7 +324,7 @@ indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia f
 ## 4. Elenco analitico (in ordine alfabetico) dei bricks
 
 ## APPENDICI
-### abbreviazioni biblioteche
+### Abbreviazioni biblioteche
 Se una biblioteca non è presente si prega di segnalarlo via email in modo che si possa poi stabilire una sigla convenzionale e univoca all'interno del progetto.
 | Città                        | Biblioteca                                                                 | Sigla  |
 |-------------------------------|---------------------------------------------------------------------------|--------|

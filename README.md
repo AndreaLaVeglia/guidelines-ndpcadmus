@@ -1,6 +1,6 @@
 # Guida galattica per schedatori di NDP Cadmus
 
-(per info e chiarimenti scrivere a: [alaveglia@unisa.it](mailto:alaveglia@unisa.it))
+>per info e chiarimenti scrivere a: [alaveglia@unisa.it](mailto:alaveglia@unisa.it)
 
 In questa repository si può consultare tutto il materiale utile per lavorare nell'ambiente di editing di Cadmus Naples Dante Project (https://cadmus.naplesdante.it).
 
