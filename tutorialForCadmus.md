@@ -11,8 +11,8 @@ Cadmus è un framework di descrizione modulare, nel senso che offre la possibili
 
 ## 1. Aggiunta di un _item_
 
-L'_item_ è come una scatola che contiene al suo interno elementi correlati tra loro e riferiti al contenitore che sono le _parts_.  
-L'_item_ corrisponde ad un  manoscritto/unità codicologica, un disegno, un'edizione, un testo a stampa, un item iconografico o di una persona. La descrizione analitica dell'_item_ si articolerà tramite l'inserimento di diverse _parts_ (Cf. [Documentazione online di Cadmus](https://myrmex.github.io/overview/cadmus/dev/models/)). 
+L'_item_ è come una scatola che contiene al suo interno un numero variable di  _parts_, elementi correlati tra loro e riferiti al loro contenitore.  
+L'_item_ corrisponde ad un  manoscritto/unità codicologica, un disegno, un'edizione, un testo a stampa, un item iconografico o ad una persona. La descrizione analitica dell'_item_ si articolerà tramite l'inserimento di diverse _parts_ (Cf. [Documentazione online di Cadmus](https://myrmex.github.io/overview/cadmus/dev/models/)). 
 
 Il primo passaggio per il catalogatore è dunque la creazione di un nuovo _item_, andando sul bottone in basso a sinistra nella visualizzazione dell'editor di Cadmus_NDP.
 
@@ -284,9 +284,9 @@ Le informazioni aggiuntive contenute in **Disposizione del testo** vanno aggiunt
 ### metadata
 Con questa parte si attribuiscono all'item dei metadati generici.  
 Convenzionalmente qui si deve inserire un EID e le informazioni e le informazioni sull'autorialità della scheda
-#### type=EID 
+Ogni metadato ha un campo *type* che indica il [tipo di dato](#tipi-di-dato) un campo *name* per indicare la classe di 
 
- L'EID è un ID user-friendly è strutturato convenzionalmente secondo le seguenti parti:
+#### name=EID 
 
 1. indica il *facet*, ossia la tipologia di item secondo la seguente tabella
 | facet | abbreviazione per EID |
@@ -323,7 +323,7 @@ indica l'autore della catalogazione nell'ambiente Cadmus nel caso in cui abbia f
 
 ## 4. Elenco analitico (in ordine alfabetico) dei bricks
 
-## APPENDICI
+## 5. APPENDICI
 ### Abbreviazioni biblioteche
 Se una biblioteca non è presente si prega di segnalarlo via email in modo che si possa poi stabilire una sigla convenzionale e univoca all'interno del progetto.
 | Città                        | Biblioteca                                                                 | Sigla  |
@@ -387,3 +387,18 @@ Se una biblioteca non è presente si prega di segnalarlo via email in modo che s
 | Roma                          | Biblioteca dell'Accademia Nazionale dei Lincei e Corsiniana               | BANLC  |
 | Roma                          | Biblioteca Nazionale Centrale                                             | BNC    |
 | San Daniele del Friuli         | ...                                                                       | ...    |
+### Concetti utili ricorrenti
+####  Tipi di dato
+In informatica è importante assegnare definire il [tipo di dato](https://it.wikipedia.org/wiki/Tipo_di_dato) per consentire all'elaboratore di processarlo ed eseguire operazioni.
+Spesso in Cadmus viene chiesto di selezionare la tipologia del dato che stiamo immettendo e queste sono le alternative:
+- **boolean**: il tipo booleano ha due soli valori: true ("vero") e false ("falso")
+- **string**: le stringhe sono sequenze di caratteri di lunghezza finita. Si indica all'elaboratore di considerare il dato come testo e non per il suo eventuale valore intrinseco.
+- **number**: un dato interamente numerico, che l'elaboratore può utilizzare per operazioni aritmetiche.
+#### elaborazione di un EID
+L'EID è un identificativo **univoco** da assegnare ad un determinato dato o insieme di dati.
+Come regole generali per determinare un ID:
+- deve essere composto solo da lettere e numeri
+- senza diacritici e tutto in minuscolo
+- non si usano altri segni ad eccezione del trattino alto ("-") e dell'underscore ("_")
+  - il trattino alto viene usato come separatore (semanticamente corrispondente allo spazio)
+  - l'undescore separa un prefisso comune ad un gruppo di EID 
