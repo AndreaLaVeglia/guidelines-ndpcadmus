@@ -121,7 +121,7 @@ Le informazioni aggiuntive contenute in **Disposizione del testo** vanno aggiunt
 
 
 ### Fascicolazione > [`Sheet Labels`](./tutorialForCadmus.md/#sheet-labels)
-Per inserire notizie sulla fascicolazione bisogna aggiungere la part `Sheet Labels` (cf. [1.2 Aggiunta di part](#12-aggiunta-di-part)).
+(cf. [1.2 Aggiunta di part](#12-aggiunta-di-part)).
 
 ### Legatura
 
@@ -136,8 +136,6 @@ In particolare:
 - `board` indicre materiale assi
 - `description` aggiungere la descrizione (di solito è all'inizio del campo)
 
-
-[torna all'indice](#linee-guida-per-il-trasferimento-di-schede-da-idp-a-cadmus)
 
 ### Scritture e mani
 
