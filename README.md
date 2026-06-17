@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/1142419027.svg)](https://doi.org/10.5281/zenodo.20736190)
 
-# Guida galattica per schedatori di NDP Cadmus
+# Guida galattica per catalogatori in Cadmus NDP
 
 >per info e chiarimenti scrivere a: [alaveglia@unisa.it](mailto:alaveglia@unisa.it)
 
