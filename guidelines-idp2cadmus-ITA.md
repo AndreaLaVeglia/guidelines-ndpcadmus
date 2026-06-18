@@ -1,4 +1,4 @@
-# Linee guida per il trasferimento di schede da IDP a Cadmus
+# Linee guida per il trasferimento di contenuti da IDP a Cadmus
 
 >a cura di Andrea La Veglia (per chiarimenti: [alaveglia@unisa.it](mailto:alaveglia@unisa.it))
 
